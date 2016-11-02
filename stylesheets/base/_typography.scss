@@ -1,0 +1,130 @@
+@font-face {
+  font-family: 'NeueHansKendrick-Heavy';
+  src:  url('fonts/neue-hans-kendrick/NeueHansKendrick-Heavy.woff2') format('woff2'),
+        url('fonts/neue-hans-kendrick/NeueHansKendrick-Heavy.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'NeueHansKendrick-ExtraBold';
+  src:  url('fonts/neue-hans-kendrick/NeueHansKendrick-ExtraBold') format('woff2'),
+        url('fonts/neue-hans-kendrick/NeueHansKendrick-ExtraBold') format('woff');
+}
+
+@font-face {
+  font-family: 'NeueHansKendrick-Bold';
+  src:  url('fonts/neue-hans-kendrick/NeueHansKendrick-Bold.woff2') format('woff2'),
+        url('fonts/neue-hans-kendrick/NeueHansKendrick-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'NeueHansKendrick-Medium';
+  src:  url('fonts/neue-hans-kendrick/NeueHansKendrick-Medium.woff2') format('woff2'),
+        url('fonts/neue-hans-kendrick/NeueHansKendrick-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'NeueHansKendrick-Regular';
+  src:  url('fonts/neue-hans-kendrick/NeueHansKendrick-Regular.woff2') format('woff2'),
+        url('fonts/neue-hans-kendrick/NeueHansKendrick-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'NeueHansKendrick-Light';
+  src:  url('fonts/neue-hans-kendrick/NeueHansKendrick-Light.woff2') format('woff2'),
+        url('fonts/neue-hans-kendrick/NeueHansKendrick-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'NeueHansKendrick-Thin';
+  src:  url('fonts/neue-hans-kendrick/NeueHansKendrick-Thin.woff2') format('woff2'),
+        url('fonts/neue-hans-kendrick/NeueHansKendrick-Thin.woff') format('woff');
+}
+
+$base-font-family: 'NeueHansKendrick-Regular';
+$heading-font-family: $base-font-family;
+
+body {
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-feature-settings: "kern", "liga", "pnum";
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  // font-family: $heading-font-family;
+  // font-size: $base-font-size;
+  line-height: $heading-line-height;
+  margin: 0 0 $small-spacing;
+}
+
+h1 {
+  color: $brand-orange;
+  font-family: 'NeueHansKendrick-Bold';
+  font-size: 156px;
+  letter-spacing: -3px;
+  line-height: 156px;
+  margin: 0 0 0 -0.6rem;
+
+  @media only screen and (max-width: 480px) {
+    font-size: 100px;
+    line-height: 100px;
+    margin: 0 0 0 -0.2rem;
+  }
+
+  @media only screen and (max-width: 320px) {
+    font-size: 90px;
+    line-height: 90px;
+  }
+}
+
+h3 {
+  color: $purple-3;
+  font-family: 'NeueHansKendrick-Bold';
+  font-size: 1.5em;
+
+  a {
+    color: $purple-3;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: shade($purple-3, 25%);
+    }
+  }
+}
+
+p {
+  margin: 0 0 $small-spacing;
+}
+
+a {
+  color: $action-color;
+  text-decoration: none;
+  transition: color $base-duration $base-timing;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: shade($action-color, 25%);
+  }
+}
+
+hr {
+  border-bottom: $base-border;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: $base-spacing 0;
+}
+
+img,
+picture {
+  margin: 0;
+  max-width: 100%;
+}

@@ -1,0 +1,32 @@
+body {
+  background-color: #EFF1E8;
+  margin: 0;
+}
+
+.wrapper {
+  @include outer-container;
+  padding: 5em 0 5em 0;
+
+  @media only screen and (max-width: 480px) {
+    padding-top: 3em;
+  }
+}
+
+.hero--home {
+  @include span-columns(8);
+  @include omega();
+  @include shift(2);
+  margin-top: $header-height;
+}
+
+@media only screen and (max-width: 480px) {
+  .hero--home {
+    @include span-columns(12);
+    @include shift(0);
+    padding: 0 24px;
+  }
+}
+
+#home-hero {
+  margin:$header-height;
+}

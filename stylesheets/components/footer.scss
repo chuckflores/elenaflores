@@ -1,0 +1,78 @@
+footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+
+.link-container {
+  display: flex;
+  flex-direction: row;
+}
+
+$link-hover: background-color $base-duration $base-timing;
+$link-lighten: 5%;
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  transition: $link-hover;
+  width: 100%;
+}
+
+.link:nth-child(1) {
+  background-color: $gradient5-1;
+}
+
+.link:nth-child(1):hover {
+  background-color: lighten($gradient5-1, $link-lighten);
+}
+
+.link:nth-child(2) {
+  background-color: $gradient5-2;
+}
+
+.link:nth-child(2):hover {
+  background-color: lighten($gradient5-2, $link-lighten);
+}
+
+.link:nth-child(3) {
+  background-color: $gradient5-3;
+}
+
+.link:nth-child(3):hover {
+  background-color: lighten($gradient5-3, $link-lighten);
+}
+
+.link:nth-child(4) {
+  background-color: $gradient5-4;
+}
+
+.link:nth-child(4):hover {
+  background-color: lighten($gradient5-4, $link-lighten);
+}
+
+.link:nth-child(5) {
+  background-color: $gradient5-5;
+}
+
+.link:nth-child(5):hover {
+  background-color: lighten($gradient5-5, $link-lighten);
+}
+
+svg {
+  fill: $white;
+}
+
+.icon-link {
+  fill: $white;
+}
+
+.dribbble {
+  fill: $white;
+}
+
+.email {
+  fill: $white;
+}
