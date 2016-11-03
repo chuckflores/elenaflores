@@ -3161,6 +3161,19 @@
 		"oF": 2,
 		"oS": 0,
 		"uL": 1
+		},
+	"\/stylesheets\/utils\/_grid.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/stylesheets\/css\/_grid.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
 		}
 	},
 "hooks": [
@@ -3170,7 +3183,7 @@
 "projectAttributes": {
 	"creationDate": 499823276,
 	"displayValue": "elenaflores",
-	"displayValueWasSetByUser": 0,
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets_magenta"
 	},
 "projectSettings": {
