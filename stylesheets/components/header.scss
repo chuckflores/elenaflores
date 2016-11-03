@@ -5,14 +5,39 @@ header {
   flex-direction: row;
   height: $header-height;
   justify-content: space-between;
-  padding: 0em 1.8em;
-  position: fixed;
+  padding: 0em 2em;
   width: 100%;
+  font-family: 'chocolates';
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  img {
+    width: 56px;
+  }
+
+  h1 {
+    font-family: 'chocolates';
+    font-size: 24px;
+    font-weight: 900;
+    color: $teal;
+    letter-spacing: 1.17px;
+    padding-left: 1em;
+    text-transform: uppercase;
+  }
 }
 
 
 ul {
   li {
     display: inline;
+    padding-left: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 3px;
   }
 }

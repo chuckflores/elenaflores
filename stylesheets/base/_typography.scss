@@ -1,46 +1,4 @@
-@font-face {
-  font-family: 'NeueHansKendrick-Heavy';
-  src:  url('fonts/neue-hans-kendrick/NeueHansKendrick-Heavy.woff2') format('woff2'),
-        url('fonts/neue-hans-kendrick/NeueHansKendrick-Heavy.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'NeueHansKendrick-ExtraBold';
-  src:  url('fonts/neue-hans-kendrick/NeueHansKendrick-ExtraBold') format('woff2'),
-        url('fonts/neue-hans-kendrick/NeueHansKendrick-ExtraBold') format('woff');
-}
-
-@font-face {
-  font-family: 'NeueHansKendrick-Bold';
-  src:  url('fonts/neue-hans-kendrick/NeueHansKendrick-Bold.woff2') format('woff2'),
-        url('fonts/neue-hans-kendrick/NeueHansKendrick-Bold.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'NeueHansKendrick-Medium';
-  src:  url('fonts/neue-hans-kendrick/NeueHansKendrick-Medium.woff2') format('woff2'),
-        url('fonts/neue-hans-kendrick/NeueHansKendrick-Medium.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'NeueHansKendrick-Regular';
-  src:  url('fonts/neue-hans-kendrick/NeueHansKendrick-Regular.woff2') format('woff2'),
-        url('fonts/neue-hans-kendrick/NeueHansKendrick-Regular.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'NeueHansKendrick-Light';
-  src:  url('fonts/neue-hans-kendrick/NeueHansKendrick-Light.woff2') format('woff2'),
-        url('fonts/neue-hans-kendrick/NeueHansKendrick-Light.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'NeueHansKendrick-Thin';
-  src:  url('fonts/neue-hans-kendrick/NeueHansKendrick-Thin.woff2') format('woff2'),
-        url('fonts/neue-hans-kendrick/NeueHansKendrick-Thin.woff') format('woff');
-}
-
-$base-font-family: 'NeueHansKendrick-Regular';
+$base-font-family: 'explorer';
 $heading-font-family: $base-font-family;
 
 body {
@@ -57,15 +15,11 @@ h3,
 h4,
 h5,
 h6 {
-  // font-family: $heading-font-family;
-  // font-size: $base-font-size;
   line-height: $heading-line-height;
   margin: 0 0 $small-spacing;
 }
 
 h1 {
-  color: $brand-orange;
-  font-family: 'NeueHansKendrick-Bold';
   font-size: 156px;
   letter-spacing: -3px;
   line-height: 156px;
@@ -85,7 +39,6 @@ h1 {
 
 h3 {
   color: $purple-3;
-  font-family: 'NeueHansKendrick-Bold';
   font-size: 1.5em;
 
   a {
@@ -101,6 +54,7 @@ h3 {
 
 p {
   margin: 0 0 $small-spacing;
+  font-weight: 300;
 }
 
 a {
