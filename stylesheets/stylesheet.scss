@@ -1,6 +1,8 @@
 @import "fonts/fonts";
 
-@import "library/library.scss";
+@import "library/library";
 
-@import "base/base.scss";
-@import "components/components.scss";
+@import "base/base";
+@import "utils/utils";
+
+@import "components/components";

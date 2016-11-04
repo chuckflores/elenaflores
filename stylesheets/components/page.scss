@@ -3,18 +3,13 @@ body {
   margin: 0;
 }
 
-// .wrapper {
-//   @include outer-container;
-//   // padding: 5em 0 5em 0;
-//
-//   @media only screen and (max-width: 480px) {
-//     padding-top: 3em;
-//   }
-// }
+section {
+  width: 100%;
+}
 
 #home-hero {
-  // margin-top: $header-height;
   padding-top: $header-height;
+  padding-bottom: 8em;
 
   h1 {
     color: $dark-blue;
@@ -44,4 +39,15 @@ body {
 
 #home-about {
   background-color: $tan;
+  padding: 8em 0;
+
+  .home-about-text {
+    padding-bottom: 2em;
+  }
+}
+
+.home-about-img {
+  margin-top: 3em;
+  // width: 100%;
+  padding: 2em;
 }

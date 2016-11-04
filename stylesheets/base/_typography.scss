@@ -19,42 +19,18 @@ h6 {
   margin: 0 0 $small-spacing;
 }
 
-h1 {
-  font-size: 156px;
-  letter-spacing: -3px;
-  line-height: 156px;
-  margin: 0 0 0 -0.6rem;
-
-  @media only screen and (max-width: 480px) {
-    font-size: 100px;
-    line-height: 100px;
-    margin: 0 0 0 -0.2rem;
-  }
-
-  @media only screen and (max-width: 320px) {
-    font-size: 90px;
-    line-height: 90px;
-  }
-}
-
-h3 {
-  color: $purple-3;
-  font-size: 1.5em;
-
-  a {
-    color: $purple-3;
-
-    &:active,
-    &:focus,
-    &:hover {
-      color: shade($purple-3, 25%);
-    }
-  }
+h2 {
+  color: $teal;
+  font-size: 36px;
+  font-weight: 700;
 }
 
 p {
+  color: $dark-blue;
   margin: 0 0 $small-spacing;
   font-weight: 300;
+  font-size: 24px;
+  line-height: 44px;
 }
 
 a {
@@ -66,6 +42,22 @@ a {
   &:focus,
   &:hover {
     color: shade($action-color, 25%);
+  }
+}
+
+.button-secondary {
+  border: solid 2px $dark-blue;
+  background-color: none;
+  color: $dark-blue;
+  font-size: 16px;
+  font-weight: 700;
+  padding:12px 24px;
+  line-height: 24px;
+  transition: background-color, color $base-timing $base-duration;
+
+  &:hover {
+    background-color: $dark-blue;
+    color: $tan;
   }
 }
 

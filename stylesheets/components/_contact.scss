@@ -1,0 +1,18 @@
+#contact {
+  text-align: center;
+  padding-top: $header-height * 2;
+
+  $link-color: $teal;
+
+  a {
+    color: $link-color;
+
+    &:hover {
+      color: lighten($link-color, 15%)
+    }
+
+    &:active {
+      color: darken($link-color, 10%)
+    }
+  }
+}
