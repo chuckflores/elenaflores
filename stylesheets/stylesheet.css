@@ -510,7 +510,8 @@ section {
     font-size: 72px;
     letter-spacing: 3.52px;
     line-height: 108px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin-bottom: 0; }
   #home-hero h2 {
     color: #00334A;
     font-family: 'chocolates';
