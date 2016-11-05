@@ -510,6 +510,10 @@ body {
   background-color: #EDEEE3;
   margin: 0; }
 
+@media screen and (max-width: 748px) {
+  .mobile-padding {
+    padding: 0 2em; } }
+
 section {
   width: 100%; }
 
@@ -540,13 +544,32 @@ section {
 
 #home-about {
   background-color: #FEF7EB;
-  padding: 8em 0; }
+  padding: 8em 2em; }
+  @media screen and (max-width: 748px) {
+    #home-about .button-secondary {
+      margin: 0 2em;
+      margin-bottom: 5em; } }
+  @media screen and (max-width: 748px) {
+    #home-about {
+      padding: 2em 0; } }
+  @media screen and (max-width: 748px) {
+    #home-about h2 {
+      padding: 1em;
+      margin-bottom: 0; } }
   #home-about .home-about-text {
     padding-bottom: 2em; }
+    @media screen and (max-width: 748px) {
+      #home-about .home-about-text {
+        padding: 0 2em;
+        margin-bottom: 2em; } }
 
 .home-about-img {
   margin-top: 3em;
   padding: 2em; }
+  @media screen and (max-width: 748px) {
+    .home-about-img {
+      margin-top: 1em;
+      padding: 0 2em 0 2em; } }
 
 header {
   background-color: #fff;
@@ -580,6 +603,10 @@ header {
     color: #3CC7C5; }
   .logo:hover {
     color: #3CC7C5; }
+
+@media screen and (max-width: 748px) {
+  ul {
+    text-align: right; } }
 
 ul li {
   display: inline;

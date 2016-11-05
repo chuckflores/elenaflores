@@ -46,6 +46,10 @@ header {
 
 
 ul {
+  @include media($mobile) {
+    text-align: right;
+  }
+
   li {
     display: inline;
     padding-left: 2em;

@@ -3,6 +3,12 @@ body {
   margin: 0;
 }
 
+.mobile-padding {
+  @include media($mobile) {
+    padding: 0 2em;
+  }
+}
+
 section {
   width: 100%;
 }
@@ -40,15 +46,42 @@ section {
 
 #home-about {
   background-color: $tan;
-  padding: 8em 0;
+  padding: 8em 2em;
+
+  .button-secondary {
+    @include media($mobile) {
+      margin: 0 2em;
+      margin-bottom: 5em;
+    }
+  }
+
+  @include media($mobile) {
+    padding: 2em 0;
+  }
+
+  h2 {
+    @include media($mobile) {
+      padding: 1em;
+      margin-bottom: 0;
+    }
+  }
 
   .home-about-text {
     padding-bottom: 2em;
+
+    @include media($mobile) {
+      padding: 0 2em;
+      margin-bottom: 2em;
+    }
   }
 }
 
 .home-about-img {
   margin-top: 3em;
-  // width: 100%;
   padding: 2em;
+
+  @include media($mobile) {
+    margin-top: 1em;
+    padding: 0 2em 0 2em;
+  }
 }
