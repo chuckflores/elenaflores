@@ -1,0 +1,74 @@
+$experience-module-font-size: 18px;
+$experience-module-line-height: 1.1;
+
+.pdf-resume {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  // margin-left: auto;
+  // margin-right: auto;
+  padding-top: 4em;
+
+  .pdf {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+
+    .download {
+      fill: $teal;
+      transition: fill $base-timing $base-duration;
+
+      &:hover {
+        fill: lighten($teal, 20%)
+      }
+    }
+
+    h4 {
+      color: $teal;
+      margin: 0;
+      padding-left: 10px;
+      transition: color $base-timing $base-duration;
+
+      &:hover {
+        color: lighten($teal, 20%);
+      }
+    }
+
+
+  }
+}
+
+.experience-section {
+  padding: 4em 0;
+}
+
+.experience-container {
+
+}
+
+.experience-module {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 2em;
+   color: $dark-blue;
+
+   h3 {
+     font-size: $experience-module-font-size;
+     line-height: $experience-module-line-height;
+   }
+
+   p {
+     font-size: $experience-module-font-size;
+     line-height: $experience-module-line-height;
+   }
+}
+
+.module-left {
+  display: block;
+  text-align: left;
+}
+
+.module-right {
+  display: block;
+  text-align: right;
+}

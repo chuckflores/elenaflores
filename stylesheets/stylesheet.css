@@ -197,6 +197,10 @@ h2 {
   font-size: 36px;
   font-weight: 700; }
 
+h3 {
+  font-weight: 700;
+  letter-spacing: -0.2px; }
+
 p {
   color: #00334A;
   margin: 0 0 0.75em;
@@ -235,6 +239,15 @@ img,
 picture {
   margin: 0;
   max-width: 100%; }
+
+.bg-tan {
+  background-color: #FEF7EB; }
+
+.bg-olive {
+  background-color: #EDEEE3; }
+
+.bg-white {
+  background-color: #FFFFFF; }
 
 .container {
   max-width: 1200px;
@@ -582,65 +595,6 @@ ul li {
     ul li a:active {
       color: #237a79; }
 
-footer {
-  position: fixed;
-  bottom: 0px;
-  width: 100%; }
-
-.link-container {
-  display: flex;
-  flex-direction: row; }
-
-.link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 60px;
-  transition: background-color 250ms ease;
-  width: 100%; }
-
-.link:nth-child(1) {
-  background-color: #B77745; }
-
-.link:nth-child(1):hover {
-  background-color: #bf8456; }
-
-.link:nth-child(2) {
-  background-color: #B68063; }
-
-.link:nth-child(2):hover {
-  background-color: #be8e74; }
-
-.link:nth-child(3) {
-  background-color: #bb9487; }
-
-.link:nth-child(3):hover {
-  background-color: #c4a298; }
-
-.link:nth-child(4) {
-  background-color: #7C6569; }
-
-.link:nth-child(4):hover {
-  background-color: #8a7075; }
-
-.link:nth-child(5) {
-  background-color: #343952; }
-
-.link:nth-child(5):hover {
-  background-color: #3e4462; }
-
-svg {
-  fill: #FFFFFF; }
-
-.icon-link {
-  fill: #FFFFFF; }
-
-.dribbble {
-  fill: #FFFFFF; }
-
-.email {
-  fill: #FFFFFF; }
-
 #contact {
   text-align: center;
   padding-top: 144px; }
@@ -650,3 +604,48 @@ svg {
       color: #77d8d7; }
     #contact a:active {
       color: #2ea2a0; }
+
+.pdf-resume {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 4em; }
+  .pdf-resume .pdf {
+    display: flex;
+    align-items: center;
+    font-size: 13px; }
+    .pdf-resume .pdf .download {
+      fill: #3CC7C5;
+      transition: fill ease 250ms; }
+      .pdf-resume .pdf .download:hover {
+        fill: #8bdedd; }
+    .pdf-resume .pdf h4 {
+      color: #3CC7C5;
+      margin: 0;
+      padding-left: 10px;
+      transition: color ease 250ms; }
+      .pdf-resume .pdf h4:hover {
+        color: #8bdedd; }
+
+.experience-section {
+  padding: 4em 0; }
+
+.experience-module {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2em;
+  color: #00334A; }
+  .experience-module h3 {
+    font-size: 18px;
+    line-height: 1.1; }
+  .experience-module p {
+    font-size: 18px;
+    line-height: 1.1; }
+
+.module-left {
+  display: block;
+  text-align: left; }
+
+.module-right {
+  display: block;
+  text-align: right; }
