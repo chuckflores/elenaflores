@@ -634,6 +634,10 @@ section {
   right: 2em;
   cursor: pointer;
   z-index: 10; }
+  .menu-toggle:hover .one,
+  .menu-toggle:hover .two,
+  .menu-toggle:hover .three {
+    background: #3CC7C5; }
   .menu-toggle.on .one {
     -webkit-transform: rotate(45deg) translate(4px, 6px);
     -moz-transform: rotate(45deg) translate(4px, 6px);
@@ -660,6 +664,10 @@ section {
   -webkit-transition-duration: 0.3s;
   -moz-transition-duration: 0.3s;
   transition-duration: 0.3s; }
+  .one:hover,
+  .two:hover,
+  .three:hover {
+    background: #0079b0; }
 
 nav ul {
   margin: 0;
