@@ -571,57 +571,6 @@ section {
       margin-top: 1em;
       padding: 0 2em 0 2em; } }
 
-header {
-  background-color: #fff;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  height: 72px;
-  justify-content: space-between;
-  padding: 0em 2em;
-  width: 100%;
-  font-family: 'chocolates'; }
-
-.logo {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-  .logo img {
-    width: 56px; }
-  .logo h1 {
-    font-family: 'chocolates';
-    font-size: 24px;
-    font-weight: 900;
-    color: #3CC7C5;
-    letter-spacing: 1.17px;
-    padding-left: 1em;
-    padding-top: 20px;
-    text-transform: uppercase; }
-  .logo a {
-    color: #3CC7C5; }
-  .logo:visited {
-    color: #3CC7C5; }
-  .logo:hover {
-    color: #3CC7C5; }
-
-@media screen and (max-width: 748px) {
-  ul {
-    text-align: right; } }
-
-ul li {
-  display: inline;
-  padding-left: 2em;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 13px;
-  letter-spacing: 3px; }
-  ul li a {
-    color: #3CC7C5; }
-    ul li a:hover {
-      color: #77d8d7; }
-    ul li a:active {
-      color: #237a79; }
-
 #contact {
   text-align: center;
   padding-top: 144px; }
@@ -676,3 +625,114 @@ ul li {
 .module-right {
   display: block;
   text-align: right; }
+
+.menu-toggle {
+  width: 28px;
+  height: 30px;
+  position: absolute;
+  top: 20px;
+  right: 2em;
+  cursor: pointer;
+  z-index: 10; }
+  .menu-toggle.on .one {
+    -webkit-transform: rotate(45deg) translate(4px, 6px);
+    -moz-transform: rotate(45deg) translate(4px, 6px);
+    -ms-transform: rotate(45deg) translate(4px, 6px);
+    -o-transform: rotate(45deg) translate(4px, 6px);
+    transform: rotate(45deg) translate(4px, 6px); }
+  .menu-toggle.on .two {
+    opacity: 0; }
+  .menu-toggle.on .three {
+    -webkit-transform: rotate(-45deg) translate(4px, -8px);
+    -moz-transform: rotate(-45deg) translate(4px, -8px);
+    -ms-transform: rotate(-45deg) translate(4px, -8px);
+    -o-transform: rotate(-45deg) translate(4px, -8px);
+    transform: rotate(-45deg) translate(4px, -8px); }
+
+.one,
+.two,
+.three {
+  width: 100%;
+  height: 2px;
+  background: #00334A;
+  margin: 6px auto;
+  backface-visibility: hidden;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  font-family: 'chocolates';
+  list-style: none;
+  margin: 4em auto;
+  text-align: center; }
+  nav ul.hidden {
+    display: none; }
+  nav ul a {
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    text-decoration: none;
+    color: #3CC7C5;
+    font-size: 2em;
+    line-height: 3;
+    width: 100%;
+    display: block; }
+    nav ul a:hover {
+      color: #8bdedd; }
+    nav ul a:active {
+      color: #237a79; }
+
+.menu-section {
+  background-color: #FFFFFF;
+  color: #3CC7C5;
+  display: flex;
+  font-family: 'chocolates';
+  height: 72px;
+  justify-content: space-between;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  transition: height ease 250ms; }
+  .menu-section.on {
+    background-color: #FFFFFF;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    z-index: 10;
+    transition: height ease 250ms; }
+    .menu-section.on nav {
+      background-color: #FFFFFF;
+      height: 100vh;
+      position: relative;
+      width: 100%;
+      padding: 2em; }
+  .menu-section .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 11;
+    margin-left: 2em;
+    position: fixed;
+    top: 2px; }
+    .menu-section .logo img {
+      margin-right: 1em;
+      width: 56px; }
+      @media screen and (max-width: 748px) {
+        .menu-section .logo img {
+          display: none; } }
+    .menu-section .logo h1 {
+      font-family: 'chocolates';
+      font-size: 24px;
+      font-weight: 900;
+      letter-spacing: 1.17px;
+      padding-top: 20px;
+      text-transform: uppercase; }
+    .menu-section .logo a {
+      color: #3CC7C5; }
+    .menu-section .logo:visited {
+      color: #3CC7C5; }
+    .menu-section .logo:hover {
+      color: #3CC7C5; }
