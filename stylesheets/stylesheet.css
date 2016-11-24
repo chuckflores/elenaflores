@@ -195,7 +195,8 @@ h6 {
 h2 {
   color: #3CC7C5;
   font-size: 36px;
-  font-weight: 700; }
+  font-weight: 700;
+  letter-spacing: -1px; }
 
 h3 {
   font-weight: 700;
@@ -580,6 +581,9 @@ section {
       color: #77d8d7; }
     #contact a:active {
       color: #2ea2a0; }
+
+.section-padding-large {
+  padding: 6em 0; }
 
 .pdf-resume {
   text-align: center;

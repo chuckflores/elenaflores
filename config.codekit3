@@ -59,6 +59,16 @@
 		"oAP": "\/images\/favicon.ico",
 		"oF": 0
 		},
+	"\/images\/hero-emblem.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/images\/hero-emblem.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/images\/logo.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1651,6 +1661,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/stylesheets\/css\/_resume.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/stylesheets\/components\/_sections.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/stylesheets\/css\/_sections.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -3266,6 +3289,19 @@
 		"oA": 0,
 		"oAP": "\/stylesheets\/stylesheet.css",
 		"oF": 2,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/stylesheets\/utils\/_backgrounds.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/stylesheets\/css\/_backgrounds.css",
+		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
